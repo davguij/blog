@@ -158,7 +158,7 @@ a:not(h1 a):hover {
 
 h1 a {
     text-decoration: none;
-    color: #FFF;
+    /*color: #FFF;*/
 }
 
 h2 a, h3 a,
@@ -377,10 +377,26 @@ margin on the iframe, cause it breaks stuff. */
     /*height: 60%;*/
     margin-bottom: 5rem;
     text-align: center;
-    color: #fff;
+    /*color: #fff;*/
     background: #303538 no-repeat center center;
     background-size: cover;
     padding: 2% 0;
+}
+
+.site-head-content.white {
+    color: #FFF;
+}
+
+.site-head-content.white a {
+    color: #FFF;
+}
+
+.site-head-content.black {
+    color: #333;
+}
+
+.site-head-content.black a {
+    color: #333;
 }
 
 .blog-logo {

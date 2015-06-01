@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <title>How this blog is built | Adventures in Front End</title>
+  <meta name="description" content="A humble blog by David Guijarro" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" type="text/css" href="/blog/css/screen.css" />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic|Open+Sans:700,400" />
+
+  <meta name="generator" content="Adventures in Front End">
+
+  
+  
+  
+
+  
+</head>
+
+
+<body class="post-template">
+
+  <header class="site-head" >
+    <div class="vertical">
+        <div class="site-head-content inner">
+            
+            <h1 class="blog-title"><a href="/blog/">Adventures in Front End</a></h1>
+            <h2 class="blog-description">A humble blog by David Guijarro</h2>
+        </div>
+    </div>
+</header>
+  
+
+<main class="content" role="main">
+  <article class="post">
+    <span class="post-meta">
+      <time datetime="2015-06-01T14:14:46.000Z" itemprop="datePublished">
+          01-06-2015
+      </time>
+    
+</span>
+    <h2 class="post-title">How this blog is built</h2>
+    <section class="post-content">
+      <p>When I started to think of writing a Front End related blog, the first thoughts that came to my mind were about the tech stack I would need.</p>
+<p>I established three clear conditions for the stack to cover:</p>
+<ul>
+<li>To run on JavaScript. Makes sense for a Front End related blog.</li>
+<li>To be as simple and as “client-only” as possible. No databases, bloat, server-side code and so on.</li>
+<li>To run in a free environment. I don’t really want to get a VPS or anything to host this.</li>
+</ul>
+<p>At first though, and because of my personal experiece, the most obvious answer was <a href="http://wordpress.org" target="_blank" rel="external">WordPress</a>. I made some WP sites (blogs and otherwise) back in the day and I was a pretty advanced user. However, this choice didn’t really cover the conditions, so I had to move on.</p>
+<p>Right after WP, I layed my eyes on <a href="https://github.com/tryghost/Ghost" target="_blank" rel="external">Ghost</a>. I liked the choice at first because it runs on Node.js and all the cool kids are using it and it has a lot of nice themes and stuff ready to use and all…</p>
+<p>It turned out Ghost didn’t comply with my second and third conditions because you need an Amazon EC instance or a VPS or something you can install Ubuntu and Node.js and Nginx and maybe something more, which makes it not simple enough (and probably not free either!)</p>
+<p>I explored some other options out there like <a href="http://jekyllrb.com/" target="_blank" rel="external">Jekyll</a> (free hosting through GH Pages, but no JS!), <a href="http://jsantell.github.io/poet/" target="_blank" rel="external">Poet</a> (which incorporates cool stuff like routing but needs a Node.js backend and has an ugly as hell homepage!) and more. Then, finally, I came across <strong><a href="https://hexo.io/" target="_blank" rel="external">Hexo</a></strong>.</p>
+<h4 id="Why_Hexo?">Why Hexo?</h4><p>Basically, because it covers my three conditions.</p>
+<ul>
+<li>Runs completely on JS.</li>
+<li>Posts are saved as Markdown files. No database, no server, no nothing; just good ol’ client-side code. Local development is based on Node.js with a task runner a-la-Grunt, but it’s not even necessary to run the server command if you’re just writing a post.</li>
+<li>Deployment to <a href="https://pages.github.com/" target="_blank" rel="external">GitHub Pages</a> is easy as running a command in the console. And yes, GitHub Pages is a free and pretty cool client-side hosting.</li>
+</ul>
+<h4 id="What_else_does_this_site_use?">What else does this site use?</h4><p>This blog’s theme is a slightly modified version of the <a href="https://github.com/kywk/hexo-theme-casper" target="_blank" rel="external">Hexo-ported Casper theme</a>. It also uses jQuery, of course; the header backgrounds are randomly made on the fly through the  very cool <a href="https://github.com/qrohlf/trianglify" target="_blank" rel="external">Trianglify library</a> by <a href="http://qrohlf.com/" target="_blank" rel="external">Quinn Rohlf</a>.</p>
+<p>The typography is <a href="https://www.google.com/fonts/specimen/Open+Sans" target="_blank" rel="external">Open Sans</a> for the titles and <a href="https://www.google.com/fonts/specimen/Noto+Serif" target="_blank" rel="external">Noto Serif</a> for the body. Writting and development is powered by caffeine and Spotify.</p>
+<p>That’s pretty much it, I think. I will surely make frequent changes to the blog, and I’ll try to comment them all. Your comments and questions are welcomed.</p>
+
+    </section>
+    <footer class="post-footer">
+      <section class="author">
+    <h4>David Guijarro</h4>
+    <p>Mamma was a designer, Pappa was a developer. So I'm a Devesigner, with the fate of bringing peace and understanding between the Pixels and the Bytes.</p>
+</section>
+      <section class="share">
+    <h4>Share this post</h4>
+    <a class="icon-twitter" href="http://twitter.com/share?url=http://davguij.github.io/blog/blog/2015/06/01/blog/"
+       onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+        <span class="hidden">Twitter</span>
+    </a>
+    <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://davguij.github.io/blog/blog/2015/06/01/blog/"
+       onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+        <span class="hidden">Facebook</span>
+    </a>
+    <a class="icon-google-plus" href="https://plus.google.com/share?url=http://davguij.github.io/blog/blog/2015/06/01/blog/"
+       onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+        <span class="hidden">Google+</span>
+    </a>
+</section>
+    </footer>
+  </article>
+  <nav class="pagination" role="pagination">
+    
+    <span class="page-number">•</span>
+    
+    <a class="older-posts" href="/blog/2015/05/25/hello-world/">
+        Hello World →
+    </a>
+    
+</nav>
+  <div id="comment" class="comments-area">
+    <h1 class="title"><a href="#disqus_comments" name="disqus_comments">Comments</a></h1>
+
+    
+</div>
+</main>
+
+
+  
+<footer class="site-footer">
+  
+  <div class="inner">
+     <section class="copyright">All content copyright <a href="/blog/">Adventures in Front End</a> &copy; 2015 &bull; All rights reserved.</section>
+     <section class="poweredby">Proudly published with <strong><a href="http://hexo.io/">Hexo</a></strong></section>
+  </div>
+</footer>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/trianglify/0.2.1/trianglify.min.js"></script>
+
+<script type="text/javascript" src="/blog/js/jquery.fitvids.js"></script>
+<script type="text/javascript" src="/blog/js/index.js"></script>
+
+
+
+
+
+
+</body>
+</html>
